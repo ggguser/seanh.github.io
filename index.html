@@ -3,6 +3,6 @@
 Hello
 
 {% for setting in site %}
-   {{ setting }}
+   {{ site[setting] }}
    {{ setting[0] }}: {{ setting[1] }}
 {% endfor %}
