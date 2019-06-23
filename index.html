@@ -2,7 +2,8 @@
 ---
 Hello
 
+<ul>
 {% for setting in site %}
-   {{ site[setting] }}
-   {{ site[setting][0] }}: {{ site[setting][1] }}
+  <li>{{ setting }}: {{ site[setting] }}</li>
 {% endfor %}
+</ul>
