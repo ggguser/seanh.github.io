@@ -1,7 +1,5 @@
 ---
 ---
-Hello
-
 <ul>
 {% for setting in site %}
   {% if setting != "github" %}
