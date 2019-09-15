@@ -13,7 +13,7 @@ If you give `Exception` a single parg, for example an error message string, this
 string representation (the `BaseException.__str__()` method):
 
 ```python
->>> e = Exception("Something went wrong")                                  
+>>> e = Exception("Something went wrong")
 >>> print(e)
 Something went wrong
 ```
@@ -24,7 +24,8 @@ it's called by the `print()` and `format()` builtins.
 The parg string will also be used along with the class name in the exception's formal string representation (the
 `BaseException.__repr__()` method):
 
-```python In [1]: e = Exception("Something went wrong")
+```python
+In [1]: e = Exception("Something went wrong")
 
 >>> repr(e)
 >>> "Exception('Something went wrong')"
