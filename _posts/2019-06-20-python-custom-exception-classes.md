@@ -25,8 +25,7 @@ The parg string will also be used along with the class name in the exception's f
 `BaseException.__repr__()` method):
 
 ```python
-In [1]: e = Exception("Something went wrong")
-
+>>> e = Exception("Something went wrong")
 >>> repr(e)
 >>> "Exception('Something went wrong')"
 ```
