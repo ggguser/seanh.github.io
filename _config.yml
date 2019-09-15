@@ -3,6 +3,13 @@ titles_from_headings:
   strip_title: true
   collections: true
 permalink: /:categories/:year/:month/:day/:title
+plugins:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 relative_links:
   enabled:     true
   collections: true
