@@ -1,1 +1,23 @@
 remote_theme: seanh/jekyll-theme-seanh
+titles_from_headings:
+  strip_title: true
+  collections: true
+permalink: /:categories/:year/:month/:day/:title
+plugins:
+  - jekyll-mentions
+  - jemoji
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+relative_links:
+  enabled:     true
+  collections: true
+social:
+  name: Sean Hammond
+  links:
+    - https://twitter.com/snhmnd
+    - https://www.linkedin.com/in/sean-hammond-412b8425/
+    - https://github.com/seanh
+    - https://keybase.io/seanh
+lang: en_GB
