@@ -10,9 +10,6 @@ plugins:
 relative_links:
   enabled:     true
   collections: true
-titles_from_headings:
-  strip_title: true
-  collections: true
 social:
   name: Sean Hammond
   links:
@@ -21,3 +18,6 @@ social:
     - https://github.com/seanh
     - https://keybase.io/seanh
 lang: en_GB
+titles_from_headings:
+  strip_title: true
+  collections: true
