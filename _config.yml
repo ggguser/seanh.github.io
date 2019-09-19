@@ -1,8 +1,4 @@
 remote_theme: seanh/jekyll-theme-seanh
-titles_from_headings:
-  strip_title: true
-  collections: true
-permalink: /:categories/:year/:month/:day/:title
 plugins:
   - jekyll-mentions
   - jemoji
@@ -12,6 +8,9 @@ plugins:
   - jekyll-sitemap
 relative_links:
   enabled:     true
+  collections: true
+titles_from_headings:
+  strip_title: true
   collections: true
 social:
   name: Sean Hammond
