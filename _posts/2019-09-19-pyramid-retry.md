@@ -1,5 +1,6 @@
 ---
 draft: true
+tags: Pyramid
 ---
 
 pyramid_tm, pyramid_retry, SQLAlchemy and Sentry
