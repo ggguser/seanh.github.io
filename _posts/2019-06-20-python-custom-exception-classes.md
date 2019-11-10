@@ -1,7 +1,3 @@
----
-tags: Python
----
-
 Designing Exception Classes in Python
 =====================================
 
