@@ -1,5 +1,7 @@
 ---
 draft: true
+sitemap: false
+robots: noindex, nofollow
 ---
 
 pyramid_tm, pyramid_retry, SQLAlchemy and Sentry
