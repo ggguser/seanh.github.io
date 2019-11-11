@@ -26,7 +26,7 @@ To install and run this site locally:
    bundle install --path vendor/bundle
    ```
 
-4. Finally, serve the site at <http://localhost:4000/>:
+4. Finally, serve the site at <http://localhost:4000>:
 
    ```terminal
    bundle exec jekyll serve
