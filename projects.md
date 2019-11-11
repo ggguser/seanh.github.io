@@ -119,7 +119,7 @@ Projects
 
 <article>
   <header>
-    <h3><a href="/forest">Forest</a> <span class="subtitle">(circa 2010, archived copy)</span></h3>
+    <h3><a href="/theforest.org.uk">Forest</a> <span class="subtitle">(circa 2010, archived copy)</span></h3>
   </header>
   <p>Website for Forest, a free arts and events space
   masquerading as a vegetarian café.</p>
@@ -149,7 +149,7 @@ Projects
 
 <article>
   <header>
-    <h3><a href="/infoseed">Infoseed</a> <span class="subtitle">(circa 2007, archived copy)</span></h3>
+    <h3><a href="/infoseed.org">Infoseed</a> <span class="subtitle">(circa 2007, archived copy)</span></h3>
   </header>
   <p>Website for Infoseed hacklab.</p>
 </article>
