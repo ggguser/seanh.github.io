@@ -1,11 +1,9 @@
----
-title: Writing Simple Tests
----
+Writing Simple Python Unit Tests
+================================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
-This post covers how to write your first, very simple tests.
+This post covers how to write your first, very simple Python unit tests.
 
 How the test code is organised
 ------------------------------
@@ -128,6 +126,3 @@ When an assert fails pytest
 such as the values of the two sides of the expression (the result given by
 `validate_url()` and the result that the test had been expecting) and the
 differences between them.
-
-In the next post we'll cover
-[how to test that an exception is raised]({{ site.baseurl }}{% post_url 2017-01-29-testing-that-exceptions-are-raised %}).

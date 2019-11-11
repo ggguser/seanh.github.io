@@ -1,11 +1,9 @@
----
-title: Debugging a Failing Test
----
+Debugging Failing Tests with pytest
+===================================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
-This post briefly covers some tools for debugging failing tests.
+This post briefly covers some tools for debugging failing tests when using pytest.
 
 If looking at the traceback from a test failure isn't enough there are a few
 tools to help debug a failing test:
@@ -89,6 +87,3 @@ tools to help debug a failing test:
    before committing the code. Fortunately you can easily
    [grep](https://en.wikipedia.org/wiki/Grep) the entire codebase for
    `set_trace`, since this should never appear in production code.
-
-Those are the main tools that I use to debug failing Python tests.
-The next post covers [writing new tests...]({{ site.baseurl }}{% post_url 2017-01-28-writing-tests %})

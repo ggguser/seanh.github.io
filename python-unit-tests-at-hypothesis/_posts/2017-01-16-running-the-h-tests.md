@@ -1,11 +1,9 @@
----
-title: Running the Hypothesis Python Tests
----
+Running the Hypothesis Python Tests
+===================================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
-This first post covers [running the tests](http://h.readthedocs.io/en/latest/developing/install/website/#running-h-s-tests)
+This post covers [running the tests](http://h.readthedocs.io/en/latest/developing/install/website/#running-h-s-tests)
 and if you want to try out the example commands you should have a
 [Hypothesis dev install](http://h.readthedocs.io/en/latest/developing/install/).
 
@@ -236,6 +234,3 @@ $ export PYTEST_ADDOPTS="--verbose --exitfirst --failed-first --showlocals"
 ```
 
 (This works well in combination with [direnv](https://direnv.net/).)
-
-That's everything about how to run the Python tests (whew!).
-The next post will cover [how to debug a failing test...]({{ site.baseurl }}{% post_url 2017-01-28-debugging-tests %})

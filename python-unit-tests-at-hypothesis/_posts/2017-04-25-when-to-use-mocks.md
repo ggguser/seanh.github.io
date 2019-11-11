@@ -1,9 +1,13 @@
----
-title: When and When Not to Use Mocks
----
+When and When Not to Use Mocks
+==============================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% capture seealso_extra %}
+Particularly:
+
+* [Python’s unittest.mock ](2017-03-17-mock.md)
+* [The Problem with Mocks ](2017-03-17-the-problem-with-mocks.md)
+{% endcapture %}
+{% include_relative seealso.html extra=seealso_extra %}
 
 [The first post about mocks]({{ site.baseurl }}{% post_url 2017-03-17-mock %})
 covered the basics of how to use Python's mock library.
@@ -323,6 +327,3 @@ If you've made it this far I'd really encourage you to watch
 [Integrated Tests Are A Scam](http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
 and
 [Boundaries](https://www.destroyallsoftware.com/talks/boundaries).
-
-The next post will cover a small bonus feature of the mock library:
-[sentinel]({{ site.baseurl }}{% post_url 2017-03-17-sentinel %}).

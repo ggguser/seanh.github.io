@@ -1,11 +1,9 @@
----
-title: Arrange, Act, Assert
----
+Arrange, Act, Assert
+====================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
-The tests that we've written so far have been simple enough to fit in a single
+The tests that we've written so far (see [Writing Simple Python Unit Tests](2017-01-28-writing-tests.md)) have been simple enough to fit in a single
 line of code:
 
 ```python
@@ -111,6 +109,3 @@ no benefit to excessive terseness.
 `test_validate_url()` or `test_validate_url_1()` are poor test names.
 `test_validate_url_with_a_valid_http_url()` is better.
 `test_validate_url_returns_a_valid_http_url_unmodified()` may be even better.
-
-In the next post we'll cover
-[how to use factories to easily create test objects]({{ site.baseurl }}{% post_url 2017-01-29-factories %}).

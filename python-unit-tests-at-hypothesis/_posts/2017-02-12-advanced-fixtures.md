@@ -1,11 +1,15 @@
----
-title: Advanced Fixtures
----
+Advanced pytest Fixtures
+========================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% capture seealso_extra %}
+Particularly:
 
-In [Fixtures](/posts/fixtures) we saw that **fixtures** are pytest's
+* [Basic pytest Fixtures](2017-02-02-fixtures.md)
+* [pytest's usefixtures as a Class Decorator](2017-03-17-usefixtures-class-decorator.md)
+{% endcapture %}
+{% include_relative seealso.html extra=seealso_extra %}
+
+In [Basic pytest Fixtures](2017-02-02-fixtures.md) we saw that fixtures are pytest's
 alternative to `setup()` and `teardown()` methods or to test helper functions.
 This post will try to show that pytest fixtures are much more than just a more
 convenient alternative to helper functions, by explaining some of their more
@@ -439,5 +443,3 @@ for all the details (for example:
 and [inspecting the fixture request context](http://docs.pytest.org/en/latest/fixture.html#fixtures-can-introspect-the-requesting-test-context)),
 but you should now have enough of a basis to figure out what's going on with
 all these fixtures in our tests.
-
-Next post: [mock]({{ site.baseurl }}{% post_url 2017-03-17-mock %}).

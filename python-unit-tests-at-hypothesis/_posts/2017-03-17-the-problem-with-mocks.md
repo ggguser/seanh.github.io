@@ -1,11 +1,15 @@
----
-title: The Problem with Mocks
----
+The Problem with Mocks
+======================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% capture seealso_extra %}
+Particularly:
 
-[The first post about mocks](/posts/mock) covered the basics of how to use
+* [Python’s unittest.mock ](2017-03-17-mock.md)
+* [When and When Not to Use Mocks ](2017-04-25-when-to-use-mocks.md)
+{% endcapture %}
+{% include_relative seealso.html extra=seealso_extra %}
+
+[The first post about mocks](2017-03-17-mock.md) covered the basics of how to use
 [Python's mock library](http://www.voidspace.org.uk/python/mock/).
 Using mocks has many advantages (which we'll discuss in
 [When and When Not to Use Mocks]({{ site.baseurl }}{% post_url 2017-04-25-when-to-use-mocks %}))

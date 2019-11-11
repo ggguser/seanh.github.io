@@ -1,12 +1,10 @@
----
-title: Parametrize
----
+Parametrizing Python Tests
+==========================
 
-**This post is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
-This part will cover testing multiple test cases at once using
-**@pytest.mark.parametrize()**.
+This post covers testing multiple test cases at once using
+`@pytest.mark.parametrize()`.
 In [Writing Simple Tests](/posts/writing-tests) we tested the `validate_url()`
 function that validates the links that users add to their profiles.
 `util.py` also contains a [validate_orcid()](https://github.com/hypothesis/h/blob/8d11e918005581f35f97268e9470eb3c34a6b416/h/accounts/util.py#L36)
@@ -375,5 +373,3 @@ Parametrize is a great feature of pytest that can really help to test many
 cases while minimising the amount of test code. You should always be on the
 look out for groups of test methods that could be reduced to a single method
 by using parametrize, and use if as often as possible.
-
-The next post will cover [pytest's fixtures]({{ site.baseurl }}{% post_url 2017-02-02-fixtures %}).

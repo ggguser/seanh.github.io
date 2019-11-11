@@ -1,9 +1,7 @@
----
-title: Factories
----
+Python Test Factories with factory_boy
+======================================
 
-**This is part of
-[a series of posts on Python unit testing]({{ site.baseurl }}{% post_url 2017-01-15-python-unit-testing %}).**
+{% include_relative seealso.html %}
 
 **Factories** are a really quick and easy way to create realistic objects to
 use in your tests. For example if you're testing the code for editing user
@@ -216,6 +214,3 @@ If you need an `id`, you can probably get away with specifying a fake one:
 
 You'll find `factories` used all over the Hypothesis tests, and you should try
 to use it whenever possible to create the test objects that you need.
-
-In the next post we'll look at
-[parametrize, a tool for covering many test cases at once]({{ site.baseurl }}{% post_url 2017-01-31-parametrize %}).
