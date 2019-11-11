@@ -1,5 +1,5 @@
-Designing Exception Classes in Python
-=====================================
+Designing Python Exception Classes
+==================================
 
 It isn't [wonderfully well documented](https://docs.python.org/3/library/exceptions.html#BaseException) in Python that the
 builtin `Exception` class takes any number of positional arguments (pargs) and uses them to provide `__str__()` and 
