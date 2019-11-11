@@ -1,4 +1,4 @@
-Create a New Post
-=================
+New Post
+========
 
 {% include new_post_form.html %}
