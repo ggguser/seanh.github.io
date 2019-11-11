@@ -1,0 +1,641 @@
+---
+sitemap: false
+robots: noindex, nofollow
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset=utf-8>
+    <title>Tripod Computer Setup</title>
+    <link href="/blog.css" rel="stylesheet" type="text/css" media="all">
+    <style type="text/css">
+      img, video {
+        max-width: 100%;
+      }
+      .youwillneed {
+        background-color: PapayaWhip;
+        padding-top: calc(1.625rem / 2);
+        padding-bottom: calc(1.625rem / 2);
+        margin-top: calc(1.625rem / 2);
+        margin-bottom: calc(1.625rem / 2);
+      }
+    </style>
+  </head>
+  <body>
+
+<h1>Tripod Computer Setup</h1>
+
+<!--
+
+Notes on the videos:
+
+- Big cursor
+- Set poster frame
+- 30 FPS webm
+
+-->
+
+<ol>
+  <li><a href="#buying">Buying a computer</a></li>
+  <li><a href="#testing">Testing a new computer</a></li>
+  <li><a href="#installing">Installing Ubuntu</a></li>
+  <li><a href="#user">Setting up a new user account</a></li>
+  <li><a href="#email">Setting up email (Thunderbird)</a></li>
+  <li><a href="#encryption">Setting up email encryption (Enigmail)</a></li>
+  <li><a href="#calendars">Setting up calendars (Lightning)</a></li>
+  <li><a href="#other">Other things to do</a></li>
+</ol>
+
+<h2 id="buying">Buying a computer</h2>
+
+<p>For desktop computers I've been buying refurbished Lenovo ThinkCentre's
+off eBay, and for laptops I've been buying refurbished Lenovo ThinkPad
+X-series (X230, X240, ...). These are business computers that are rugged
+and last for a long time. They get decommissioned and sold off, still perfectly
+functional, in large numbers when companies upgrade every few years.
+As a result there are lots of them on eBay, so prices are low.
+ThinkCentres and ThinkPads also have easily replaceable memory,
+hard drives, batteries, etc and Linux works well on them.</p>
+
+<h2 id="testing">Testing a new computer</h2>
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>An Internet connection.</li>
+    <li>Ubuntu on a bootable USB drive.
+    See
+    <a href="https://help.ubuntu.com/community/Installation/FromUSBStickQuick">
+      the Ubuntu help page for how to create one.</a>
+    </li>
+  </ul>
+</div>
+
+<p>When you get a second-hand or refurbished computer you should run
+it through some tests to make sure that it's all working, and return
+it if you find any problems.</p>
+
+<p>
+  For more information about all these tests see
+  <a href="https://blog.codinghorror.com/is-your-computer-stable/">
+    Is Your Computer Stable?</a>
+  on Coding Horror.
+</p>
+
+<ol>
+  <li>
+    <p>
+      The computer will probably come with Windows installed.  Boot into
+      Windows and make sure the screen, sound, touchpad, keyboard, and
+      wifi are all working. (Otherwise if you install Linux and something
+      doesn't work, you may mistakenly think it's a Linux problem.)
+    </p>
+
+    <p>Also check that the computer is as described when you bought it
+    - processor, memory, hard drive.</p>
+
+    <p>Also carefully check the screen and the outside of the computer
+    for defects, cracks, etc.</p>
+  </li>
+
+  <li>
+    <p>
+      To test the memory, boot memtest from your Ubuntu USB drive and run
+      it for a few hours, at least until it reports one complete pass.
+    </p>
+    <p>
+      To run memtest from an Ubuntu USB you have to hit Escape after
+      the BIOS has started booting from the USB but before the Ubuntu
+      boot logo has appeared. It'll then ask you to select your language,
+      then show you a menu of five choices including
+      <strong>Test memory</strong> which will launch memtest.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      To test the CPU, boot from your USB drive into the Ubuntu live
+      desktop ("Try Ubuntu without installing"), install mprime, and run
+      it for a few hours in maximum power consumption mode.  For
+      instructions see the mprime section in
+      <a href="https://blog.codinghorror.com/is-your-computer-stable/">
+        Is Your Computer Stable?</a>
+    </p>
+  </li>
+
+  <li>
+    <p>Still in the Ubuntu live desktop, test the hard drive by
+    running badblocks in non-destructive read-write mode.
+    In a terminal run this command:</p>
+
+    <pre><code>
+    sudo badblocks -nsv /dev/sda
+    </code></pre>
+
+    <p>This will take several hours to complete.</p>
+
+    <p>We're using non-destructive mode so that, if there's a problem
+    and we have to return the computer, the Windows install that it
+    came with is still there.</p>
+
+    <p>For more information about badblocks see
+      <a href="https://wiki.archlinux.org/index.php/badblocks#read-write_Test_.28non-destructive.29">
+        the ArchWiki page on badblocks.
+      </a>
+    </p>
+  </li>
+  <li>
+    <p>Still in the Ubuntu live desktop, for a second hard drive test
+    open the GUI app <strong>Disks</strong>, go to
+    <strong>SMART Data &amp; Self-Tests</strong>, then
+    <strong>Start Self-test</strong>, then <strong>Extended</strong>.
+    This will take a while to complete.</p>
+
+    <video src="disks.webm" controls playsinline></video>
+  </li>
+
+  <li>
+    <p>
+      You can also further test the hard drive using <code>dd</code> and <code>bonnie++</code>,
+      as explained in 
+      <a href="https://blog.codinghorror.com/is-your-computer-stable/">
+        Is Your Computer Stable?</a>
+    </p>
+  </li>
+
+  <li><p>Finally, be on the lookout for any glitches that could be
+      signs of hardware problems, when you're installing Ubuntu (see below).</p></li>
+</ol>
+
+
+<h2 id="installing">Installing Ubuntu</h2>
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>An Internet connection.</li>
+    <li>Ubuntu on a bootable USB drive.
+    See
+    <a href="https://help.ubuntu.com/community/Installation/FromUSBStickQuick">
+      the Ubuntu help page for how to create one.</a>
+    I've been using the latest LTS version of Ubuntu rather than the
+    most recent non-LTS version, because it'll last longer before it
+    needs to be upgraded. Stability is more important for Tripod than
+    having the latest version.
+    </li>
+  </ul>
+</div>
+
+<p>Install Ubuntu from the USB drive. Some notes on how I've been installing it:</p>
+
+<ol>
+  <li>
+    <p><b>No full disk encryption.</b>
+    I've not been using the full disk encryption option during
+    install. Don't want decryption problems potentially stopping the
+    computer from being able to boot, and it's also easier to lose the
+    full disk encryption key when doing things like drive cloning or
+    repair. Just use the per-user encrypted home directories instead
+    (see creating users below).</p>
+  </li>
+
+  <li>
+  <p><b>seanh account.</b>
+    During the installation I've just been creating a
+    <code>seanh</code> account that doesn't have an encrypted home
+    dir. This can be used as an admin account to fix things, if there's
+    ever a problem with encryption.</p>
+  </li>
+
+  <li>
+  <p><b>Computer's name.</b>
+    During installation I give each computer a unique name from
+    the
+    <a href="https://en.wikipedia.org/wiki/List_of_spacecraft_in_the_Culture_series">
+      list of spacecraft in the Culture series</a>.</p>
+  </li>
+</ol>
+
+<h2 id="user">Setting up a new user account</h2>
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>
+      A <a href="https://www.lastpass.com/">LastPass</a> account for
+      generating a new login password for the user, and for safely storing their
+      homedir encryption passphrase.
+    </li>
+  </ul>
+</div>
+
+<p>Once you've installed Ubuntu you need to set up encrypted user accounts for
+each person that'll be using the computer. To setup an encrypted user account
+with admin privileges:</p>
+
+<ol>
+  <li>
+    <p>
+      <strong>
+        Create a user with an encrypted home directory.
+      </strong>
+      You have to use the terminal to create a user with an encrypted home
+      directory on Ubuntu because the User Accounts GUI doesn't give you
+      the encryption option:
+    </p>
+    <video src="add-user.webm" controls playsinline></video>
+    <ol>
+      <li><p>Open a terminal window</p></li>
+      <li>
+        <p>
+        Type <code>sudo adduser --encrypt-home lucy</code> (in this example
+        we're adding a user called lucy).
+        Replace <code>lucy</code> with the new username in this command!
+        Hit enter.
+      </p>
+      </li>
+      <li><p>Enter your password when prompted.</p></li>
+      <li>
+        <p>When prompted to enter a second password (<strong>Enter new UNIX password</strong>)
+          you should <strong>enter the login password for the new user</strong>.</p>
+
+        <p>I've been using LastPass to generate new login passwords for users.
+        If the user already has an account on another Tripod computer, you
+        should enter the same password as they use for that account.
+        The user can change their password themselves later if they want to.</p>
+      </li>
+      <li><p>
+        When prompted to enter a Full Name, Room Number, etc just hit Enter
+        to leave them all blank.
+      </p></li>
+      <li><p>
+        You now need to run a second command to make this user an admin:
+        <code>sudo adduser lucy sudo</code>.
+        Remember to replace <code>lucy</code> with the new username in this command!
+      </p></li>
+    </ol>
+  </li>
+
+  <li>
+    <p><strong>Log out, and log in as the new user.</strong></p>
+  </li>
+
+  <li>
+    <p>
+      Logged in to the new user's account,
+      <strong>record their encryption passphrase.</strong>
+      The first time you log in to a user account with an encrypted
+      home directory, a few seconds after login this window will pop
+      up:
+    </p>
+
+    <img src="record-passphrase.png" alt="Recording the encryption passphrase">
+
+    <p>You don't need the encryption passphrase in daily use,
+    but you might need it for example for recovering files from the
+    hard drive after a crash.</p>
+
+    <p>Click on <strong>Run this action now</strong> and when asked for a
+    passphrase enter the user's login password. You'll be shown the
+    user's encryption passphrase. Copy it and paste it somewhere safe
+    and secure. I've been keeping them in LastPass.</p>
+  </li>
+</ol>
+
+<h2 id="email">Setting up email (Thunderbird)</h2>
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>An Internet connection.</li>
+    <li>The user's Tripod email address and the FastMail login password that goes with it.</li>
+  </ul>
+</div>
+
+<p>
+  <a href="https://www.fastmail.com/help/clients/thunderbird.html#email">FastMail has instructions</a>
+  for setting up an email account in Thunderbird but we'll step through it
+  here as well.
+</p>
+
+<ol>
+  <li>
+    <p>
+      <strong>Connect to wifi</strong>.
+      You'll need to be connected to wifi for the rest of the instructions
+      below.
+    </p>
+    <video src="wifi.webm" controls playsinline></video>
+  </li>
+
+  <li>
+    <p>
+      <strong>Create an app password</strong> in FastMail.
+      Apps like Thunderbird can't connect to the user's FastMail account using
+      their FastMail login password. Instead, you have to create a
+      <a href="https://www.fastmail.com/help/clients/apppassword.html">FastMail app password</a>
+      for each app and enter that into Thunderbird as the password.
+    </p>
+
+    <p>
+      Each app should have a different app password, even if they're all
+      connecting to the same FastMail account.
+      Each instance of Thunderbird on a different computer should have a
+      different app password, even if they're all connecting to the same
+      FastMail account.
+    </p>
+
+    <p>
+      To create an app password:
+    </p>
+
+    <ol>
+      <li>
+        <p>
+          Log in to the FastMail website using the user's Tripod email address
+          and their FastMail login password.
+        </p>
+      </li>
+      <li>
+        <p>
+          In the user's FastMail account go to <strong>Password &amp; Security</strong>:
+        </p>
+        <video src="password-and-security.webm" controls playsinline></video>
+      </li>
+      <li>
+        <p>
+          At the top of the Password &amp; Security page enter the user's
+          FastMail login password to unlock the page:
+        </p>
+        <video src="unlock-settings.webm" controls playsinline></video>
+      </li>
+      <li>
+        <p>
+          Scroll down to the App Passwords section and click
+          <strong>New App Password</strong>.
+          Enter a descriptive name for the app and device that you're setting up.
+          Choose <strong>Mail, Contacts and Calendars</strong>.
+          Click <strong>Generate Password</strong>.
+          DON'T CLICK DONE YET!
+          As soon as you click <strong>Done</strong> the app password will
+          disappear and you won't be able to see it again.
+          You'll need the app password multiple times to follow the instructions
+          for setting up email and calendars below.
+          Keep it open and only click <strong>Done</strong> once everything is
+          finished.
+        </p>
+        <video src="app-password.webm" controls playsinline></video>
+      </li>
+    </ol>
+  </li>
+
+  <li>
+    <p>Open Thunderbird and when it offers to create a new email
+    address choose <strong>Skip this and use my existing email.</strong>
+    </p>
+    <video src="open-thunderbird.webm" controls playsinline></video>
+  </li>
+
+  <li>
+    <p>
+      In the <strong>Mail Account Setup</strong> window enter the user's
+      name and Tripod email address.
+      <strong>Paste the app password that you just generated into the password
+      field</strong>.
+      Click <strong>Continue</strong>:
+    </p>
+    <img src="mail-account-setup-1.png" alt="The Mail Account Setup Window">
+  </li>
+
+  <li>
+    <p>
+      Wait for Thunderbird to automatically find the email settings, and then
+      click <strong>Done</strong>:
+    </p>
+    <img src="mail-account-setup-2.png" alt="The Mail Account Setup Window">
+  </li>
+</ol>
+
+<h2 id="encryption">Setting up email encryption (Enigmail)</h2>
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>An Internet connection.</li>
+    <li>
+      The user's Tripod email address's GnuPG keys for encrypted
+      email, if they already have them. For example, you can copy their
+      <code>$HOME/.gnupg</code> folder from another computer that's already setup
+      for them. You'll also need the passphrase for the keys.
+      If the email address doesn't have keys you can create new ones
+      when you get to that step.
+    </li>
+  </ul>
+</div>
+
+<ol>
+  <li>
+    <p>
+      <strong>Connect to wifi</strong>.
+      You'll need to be connected to wifi for the rest of the instructions
+      below.
+    </p>
+    <video src="wifi.webm" controls playsinline></video>
+  </li>
+  <li>
+    <p>
+      To install <a href="https://www.enigmail.net/">Enigmail</a>
+      open up the terminal and type <code>sudo apt install enigmail</code>,
+      hit Enter, type the user's Ubuntu login password, and then hit Enter
+      again:
+    </p>
+    <video src="install-enigmail.webm" controls playsinline></video>
+  </li>
+
+  <li>
+    <p>
+      <strong>If the email address already has GnuPG keys on another
+      computer then copy them over</strong>.
+      Before you can setup Enigmail you need a GnuPG keypair for the user's
+      email address.
+      If the email address doesn't have keys yet you'll be able to create them
+      later. If the email address does already have keys on another computer
+      (for example, if they're already using encrypted email with this email
+      address on another computer)
+      you should copy them over now.
+      Copy their <code>$HOME/.gnupg</code> folder from the other computer
+      to their home directory on the new computer.
+    </p>
+  </li>
+
+  <li>
+    <p>
+      Restart Thunderbird and the <strong>Enigmail Setup Wizard</strong>
+      window will appear. If it doesn't you can open it by going to
+      <strong>Enigmail</strong> -> <strong>Setup Wizard</strong>:
+    </p>
+    <video src="open-setup-wizard.webm" controls playsinline></video>
+  </li>
+
+  <li>
+    <p>
+      In the <strong>Enigmail Setup Wizard</strong> window choose
+      <strong>I prefer a standard configuration</strong> and click
+      <strong>Next</strong>:
+    </p>
+    <img src="setup-wizard-1.png" alt="The Enigmail Setup Wizard Window">
+
+    <p>
+      On the next screen (<strong>Key Selection</strong>) if you copied
+      over the user's gnupg folder earlier then Enigmail will find the user's key.
+      Select the key and click <strong>Next</strong>.
+      If the email address doesn't have GnuPG keys yet and you want to create
+      them, select <strong>I want to create a new key pair</strong> and click
+      <strong>Next</strong>.
+    </p>
+    <img src="setup-wizard-2.png" alt="The Enigmail Setup Wizard Window">
+
+    <p>
+      Finally, click <strong>Finish</strong>.
+    </p>
+    <img src="setup-wizard-3.png" alt="The Enigmail Setup Wizard Window">
+  </li>
+
+  <li><p>TODO: If you generated a new keypair then upload it to a keyserver.</p></li>
+
+  <li>
+    <p>
+      In order to send an encrypted email to someone the user needs to have
+      <strong>the recipient's</strong> public key in Enigmail.
+      Enigmail can find someone's public key on a
+      <a href="https://en.wikipedia.org/wiki/Key_server_(cryptographic)">key server</a>
+      if they've uploaded it to one.
+      To find someone's public key on a keyserver you:
+    </p>
+    <ol>
+      <li>Go to <strong>Enigmail</strong> -> <strong>Key Management</strong></li>
+      <li>Then go to <strong>Keyserver</strong> -> <strong>Search for keys</strong></li>
+      <li>Type in the email address of the user you want to send an encrypted email to and click <strong>OK</strong></li>
+      <li>When Enigmail finds their key click <strong>OK</strong> again</li>
+    </ol>
+    <video src="add-key.webm" controls playsinline></video>
+    <p>
+      The user can now send encrypted emails to the recipient.
+      You should make sure it's working: test sending an encrypted email from
+      the user to yourself and receiving and decrypting it, then sending back
+      an encrypted reply and receiving and decrypting the reply.
+    </p>
+  </li>
+</ol>
+
+<h2 id="calendars">Setting up calendars (Lightning)</h2>
+
+
+<div class="youwillneed">
+  <p>You will need:</p>
+
+  <ul>
+    <li>An Internet connection.</li>
+    <li>
+      The app password that you generated when <a href="#email">setting up the user's email</a>
+      (or you can create a new app password instead).
+    </li>
+    <li>The user's Tripod email address and the FastMail login password that goes with it.</li>
+  </ul>
+</div>
+
+<p>To add the user's calendars to Thunderbird:</p>
+
+<ol>
+  <li>
+    <p>
+      <strong>Connect to wifi</strong>.
+      You'll need to be connected to wifi for the rest of the instructions
+      below.
+    </p>
+    <video src="wifi.webm" controls playsinline></video>
+  </li>
+  <li>
+    <p>
+      Install <a href="https://www.mozilla.org/en-US/projects/calendar/">Lightning</a>:
+      open up the terminal, type <code>sudo apt install xul-ext-lightning</code>,
+      hit Enter, type the user's Ubuntu login password, and then hit Enter
+      again. When asked <strong>Do you want to continue?</strong> type y and
+      hit enter:
+    </p>
+    <video src="install-lightning.webm" controls playsinline></video>
+  </li>
+  <li>
+    <p>
+      <strong>Restart Thunderbird</strong>.
+    </p>
+  </li>
+  <li>
+    <p>
+      Lightning doesn't support calendar auto-discovery, so you'll need to add
+      each individual calendar from the user's FastMail account manually.
+    </p>
+
+    <p>
+      To find the user's FastMail calendars, login to their FastMail account
+      and go to <strong>Settings</strong> and then <strong>Calendars</strong>.
+      Note: <strong>you're about to need the app password</strong>, so
+      do this in a new tab, don't change the tab that's showing the app password.
+    </p>
+    <video src="calendars.webm" controls playsinline></video>
+
+    <p>
+      Each calendar has a CalDAV URL that you need to copy and paste into
+      Thunderbird to add the calendar:
+    </p>
+    <img src="caldav-url.png" alt="Copying the CalDAV URL">
+
+    <p>
+      Follow <a href="https://www.fastmail.com/help/clients/thunderbird.html#calendar">FastMail's instructions</a>
+      to add each calendar using its CalDAV URL. Some tips for when following FastMail's instructions:</p>
+
+    <ul>
+      <li>
+        When asked for a name and colour for the calendar,
+        <strong>give it the same name and colour as it has in FastMail</strong>.
+      </li>
+      <li>
+        When asked to enter a username and password enter the user's
+        <strong>Tripod email address</strong> and the <strong>app password</strong>
+        that you generated earlier, and make sure to check
+        <strong>Use Password Manager to remember this password</strong>.
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="other">Other things to do</h2>
+
+<p>Some additional things to do when setting up a new Tripod computer:</p>
+
+<ul>
+  <li>
+    <a href="https://www.google.com/chrome/browser/desktop/">Install Google Chrome</a>,
+    if something doesn't work in Firefox they can try using Chrome instead.
+  </li>
+
+  <li>
+    Install an adblocker like <a href="https://github.com/gorhill/uBlock">uBlock Origin</a>
+    or <a href="https://www.ghostery.com/">Ghostery</a> in both Firefox and Chrome,
+    to protect the user from crap on the Internet.
+  </li>
+
+  <li>
+    <a href="https://www.fastmail.com/help/clients/thunderbird.html#contacts">Setup contact syncing with FastMail in Thunderbird</a>.
+    This will keep Thunderbird's address book in sync with the one in the user's
+    FastMail account, and with other Thunderbirds that also have contact
+    syncing set up.
+  </li>
+</ul>
+  </body>
+</html>
