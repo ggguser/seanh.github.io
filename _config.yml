@@ -1,4 +1,4 @@
-remote_theme: seanh/jekyll-theme-seanh@0.1.4
+remote_theme: seanh/jekyll-theme-seanh@0.1.5
 permalink: pretty
 plugins:
   - jekyll-mentions
