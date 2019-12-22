@@ -1,6 +1,8 @@
 usefixtures as a Class Decorator
 ================================
 
+<p></p>
+
 {% capture seealso_extra %}
 Particularly:
 

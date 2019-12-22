@@ -1,6 +1,8 @@
 Testing that an Exception is Raised with pytest.raises
 ======================================================
 
+<p></p>
+
 {% include_relative seealso.html %}
 
 [Previously](/posts/writing-tests) we tested that the

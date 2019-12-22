@@ -1,6 +1,8 @@
 Parametrizing Python Tests
 ==========================
 
+<p></p>
+
 {% include_relative seealso.html %}
 
 This post covers testing multiple test cases at once using
