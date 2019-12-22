@@ -1,14 +1,14 @@
-- title: Posts
+- text: Posts
   url: /
-- title: Projects
+- text: Projects
   url: /projects/
-- title: GitHub
+- text: GitHub
   url: https://github.com/seanh
-- title: Gists
+- text: Gists
   url: https://gist.github.com/seanh
-- title: Stack Overflow
+- text: Stack Overflow
   url: https://stackoverflow.com/users/1175266
-- title: Pinboard
+- text: Pinboard
   url: https://pinboard.in/u:seanh
-- title: About
+- text: About
   url: /about/
