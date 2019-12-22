@@ -3,6 +3,14 @@ Projects
 
 <article>
   <header>
+    <h3><a href="https://seanh.cc/jekyll-theme-seanh">jekyll-theme-seanh</a> <span class="subtitle">(2019)</span></h3>
+  </header>
+
+  <p>The Jekyll / GitHub Pages theme this site uses.</p>
+</article>
+
+<article>
+  <header>
     <h3>Find Me <span class="subtitle">(2011)</span></h3>
   </header>
 
