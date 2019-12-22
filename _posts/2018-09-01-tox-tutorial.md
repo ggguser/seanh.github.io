@@ -1,5 +1,5 @@
 ---
-title: Managing Your Project's Virtualenvs with tox
+title: Managing a Project's Virtualenvs with tox
 subtitle: A comprehensive beginner's introduction to tox.
 ---
 
