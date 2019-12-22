@@ -1,4 +1,4 @@
-- text: Posts
+- text: Sean Hammond
   url: /
 - text: Projects
   url: /projects/
@@ -10,5 +10,3 @@
   url: https://stackoverflow.com/users/1175266
 - text: Pinboard
   url: https://pinboard.in/u:seanh
-- text: About
-  url: /about/
