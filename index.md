@@ -12,7 +12,7 @@ If you want to get in touch you can
 [send me an email](&#109;ai&#x6C;&#x74;&#x6F;:&#x68;&#x65;&#108;&#108;o&#64;&#115;&#x65;a&#110;h&#46;&#99;&#x63;).
 
 For my series of posts on Python unit testing see:
-[Python Unit Tests at Hypothesis.](python-unit-tests-at-hypothesis.md)
+[Python Unit Tests at Hypothesis.](python-unit-tests-at-hypothesis/index.md)
 
 ## Posts
 
