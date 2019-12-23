@@ -1,5 +1,7 @@
-- text: Posts
+- text: Home
   url: /
+- text: Posts
+  url: /posts/
 - text: Projects
   url: /projects/
 - text: Gists
@@ -8,5 +10,3 @@
   url: https://stackoverflow.com/users/1175266
 - text: Pinboard
   url: https://pinboard.in/u:seanh
-- text: About
-  url: /about/
