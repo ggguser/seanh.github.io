@@ -1,5 +1,6 @@
 remote_theme: seanh/jekyll-theme-seanh@0.1.10
 github_ribbon: true
+breadcrumbs_omit_date: true
 permalink: /:collection/:categories/:year/:month/:day/:title/
 plugins:
   - jekyll-mentions
