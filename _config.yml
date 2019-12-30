@@ -1,4 +1,4 @@
-remote_theme: seanh/jekyll-theme-seanh@0.1.9
+remote_theme: seanh/jekyll-theme-seanh@0.1.10
 github_ribbon: true
 permalink: /:collection/:categories/:year/:month/:day/:title/
 plugins:
