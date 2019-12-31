@@ -1,10 +1,6 @@
 Debugging Failing Tests with pytest
 ===================================
 
-<p></p>
-
-{% include_relative seealso.html %}
-
 This post briefly covers some tools for debugging failing tests when using pytest.
 
 If looking at the traceback from a test failure isn't enough there are a few

@@ -1,10 +1,6 @@
 Arrange, Act, Assert
 ====================
 
-<p></p>
-
-{% include_relative seealso.html %}
-
 The tests that we've written so far (see [Writing Simple Python Unit Tests](2017-01-28-writing-tests.md)) have been simple enough to fit in a single
 line of code:
 

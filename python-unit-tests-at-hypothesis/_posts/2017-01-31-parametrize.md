@@ -1,10 +1,6 @@
 Parametrizing Python Tests
 ==========================
 
-<p></p>
-
-{% include_relative seealso.html %}
-
 This post covers testing multiple test cases at once using
 `@pytest.mark.parametrize()`.
 In [Writing Simple Tests](/posts/writing-tests) we tested the `validate_url()`

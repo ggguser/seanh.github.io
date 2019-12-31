@@ -1,10 +1,6 @@
 Writing Simple Python Unit Tests
 ================================
 
-<p></p>
-
-{% include_relative seealso.html %}
-
 This post covers how to write your first, very simple Python unit tests.
 
 How the test code is organised

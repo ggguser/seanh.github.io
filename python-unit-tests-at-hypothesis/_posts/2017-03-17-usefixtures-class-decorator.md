@@ -1,15 +1,9 @@
+---
+tags: [pytest Fixtures]
+---
+
 usefixtures as a Class Decorator
 ================================
-
-<p></p>
-
-{% capture seealso_extra %}
-Particularly:
-
-* [Basic pytest Fixtures](2017-02-02-fixtures.md)
-* [Advanced pytest Fixtures ](2017-02-12-advanced-fixtures.md)
-{% endcapture %}
-{% include_relative seealso.html extra=seealso_extra %}
 
 In [the fixtures post](/posts/fixtures) we saw that
 [`usefixtures`](https://docs.pytest.org/en/latest/fixture.html?#using-fixtures-from-classes-modules-or-projects)

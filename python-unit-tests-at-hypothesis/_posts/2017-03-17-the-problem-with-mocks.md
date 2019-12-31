@@ -1,15 +1,9 @@
+---
+tags: [mocks]
+---
+
 The Problem with Mocks
 ======================
-
-<p></p>
-
-{% capture seealso_extra %}
-Particularly:
-
-* [Python’s unittest.mock ](2017-03-17-mock.md)
-* [When and When Not to Use Mocks ](2017-04-25-when-to-use-mocks.md)
-{% endcapture %}
-{% include_relative seealso.html extra=seealso_extra %}
 
 [The first post about mocks](2017-03-17-mock.md) covered the basics of how to use
 [Python's mock library](http://www.voidspace.org.uk/python/mock/).

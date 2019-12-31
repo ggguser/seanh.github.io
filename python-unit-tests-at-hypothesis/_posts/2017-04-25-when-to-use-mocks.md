@@ -1,15 +1,9 @@
+---
+tags: [mocks]
+---
+
 When and When Not to Use Mocks
 ==============================
-
-<p></p>
-
-{% capture seealso_extra %}
-Particularly:
-
-* [Python’s unittest.mock ](2017-03-17-mock.md)
-* [The Problem with Mocks ](2017-03-17-the-problem-with-mocks.md)
-{% endcapture %}
-{% include_relative seealso.html extra=seealso_extra %}
 
 [The first post about mocks]({{ site.baseurl }}{% post_url 2017-03-17-mock %})
 covered the basics of how to use Python's mock library.

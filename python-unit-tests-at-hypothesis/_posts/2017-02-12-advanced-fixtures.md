@@ -1,15 +1,9 @@
+---
+tags: [pytest Fixtures]
+---
+
 Advanced pytest Fixtures
 ========================
-
-<p></p>
-
-{% capture seealso_extra %}
-Particularly:
-
-* [Basic pytest Fixtures](2017-02-02-fixtures.md)
-* [pytest's usefixtures as a Class Decorator](2017-03-17-usefixtures-class-decorator.md)
-{% endcapture %}
-{% include_relative seealso.html extra=seealso_extra %}
 
 In [Basic pytest Fixtures](2017-02-02-fixtures.md) we saw that fixtures are pytest's
 alternative to `setup()` and `teardown()` methods or to test helper functions.

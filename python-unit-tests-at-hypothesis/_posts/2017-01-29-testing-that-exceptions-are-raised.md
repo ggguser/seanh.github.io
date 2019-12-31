@@ -1,10 +1,6 @@
 Testing that an Exception is Raised with pytest.raises
 ======================================================
 
-<p></p>
-
-{% include_relative seealso.html %}
-
 [Previously](/posts/writing-tests) we tested that the
 [validate_url() function](https://github.com/hypothesis/h/blob/8d11e918005581f35f97268e9470eb3c34a6b416/h/accounts/util.py#L9)
 returns the given URL if it's a valid URL. If the given URL is _not_ valid then
