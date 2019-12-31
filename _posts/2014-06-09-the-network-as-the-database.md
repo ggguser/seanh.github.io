@@ -1,6 +1,7 @@
 ---
 title: The Network as the Database
 subtitle: Store work-in-progress user data in the network, instead of in your database.
+tags: CKAN
 ---
 
 [Data Packager](/posts/datapackager/)'s schema editor uses a simple technique

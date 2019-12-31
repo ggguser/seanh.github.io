@@ -3,6 +3,7 @@ title: PDF Fingerprinting
 subtitle: How to uniquely identify a PDF file, independent of the path or URL
   the file is currently at, and even after the file has been edited, using
   PDF.js's "fingerprint" algorithm in JavaScript or Python.
+tags: Hypothesis
 ---
 
 [The Hypothesis web annotation client](https://hypothes.is/) uses PDF

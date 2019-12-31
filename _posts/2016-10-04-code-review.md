@@ -1,6 +1,7 @@
 ---
 title: Code Review
 subtitle: How to make code reviews a more pleasant and empowering experience for everyone involved.
+tags: Hypothesis
 ---
 
 Update: this was [cross-posted to the Hypothesis blog](https://hypothes.is/blog/code-review-in-remote-teams/).

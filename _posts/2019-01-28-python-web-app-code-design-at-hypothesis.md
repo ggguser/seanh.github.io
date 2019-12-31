@@ -2,6 +2,7 @@
 title: Python Web App Code Design at Hypothesis
 subtitle: Slides from a code design workshop for our Python, Pyramid web apps at Hypothesis.
 date: 2019-01-28 12:34 +0000
+tags: Hypothesis
 ---
 
 {% capture iframe %}

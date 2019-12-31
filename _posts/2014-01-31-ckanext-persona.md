@@ -1,6 +1,7 @@
 ---
 title: A Mozilla Persona Plugin for CKAN
 subtitle: Login to CKAN sites without creating an account, using Mozilla Persona.
+tags: CKAN
 ---
 
 {% include wideimg.html src="/assets/images/persona.png" alt="Logging into CKAN using Persona" title="Logging into CKAN using Persona" figcaption="Logging into CKAN using Persona" %}

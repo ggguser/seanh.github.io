@@ -1,6 +1,7 @@
 ---
 title: Background Tasks as Simple Web Services
 subtitle: The design of the broken link checker API for CKAN.
+tags: CKAN
 ---
 
 [deadoralive](https://github.com/ckan/deadoralive) is a broken link

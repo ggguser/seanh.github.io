@@ -1,6 +1,7 @@
 ---
 title: Unattended Upgrades on Ubuntu
 subtitle: How to configure an Ubuntu server to automatically keep itself up to date and send you email notifications.
+tags: Ubuntu
 ---
 
 See also:
