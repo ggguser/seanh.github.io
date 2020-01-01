@@ -1,5 +1,5 @@
 author: Sean Hammond
-remote_theme: seanh/jekyll-theme-seanh@0.1.14
+remote_theme: seanh/jekyll-theme-seanh@0.1.15
 github_ribbon: true
 permalink: pretty
 plugins:
