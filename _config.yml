@@ -1,7 +1,7 @@
 author: Sean Hammond
 remote_theme: seanh/jekyll-theme-seanh@0.1.14
 github_ribbon: true
-permalink: /:collection/:categories/:year/:month/:day/:title/
+permalink: pretty
 plugins:
   - jekyll-mentions
   - jemoji

@@ -1,9 +1,9 @@
-- text: Home
-  url: /
 - text: Posts
-  url: /posts/
+  url: /
 - text: Projects
   url: /projects/
+- text: About
+  url: /about/
 - text: Gists
   url: https://gist.github.com/seanh
 - text: Stack Overflow
