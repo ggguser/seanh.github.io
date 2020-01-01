@@ -160,7 +160,9 @@ Limitations
   But this doesn't work for pages. A `foo/bar/gar.md` page doesn't get `foo`
   and `bar` categories and its breadcrumbs will be just <samp>Home > PAGE_TITLE</samp>.
 
-  This could probably be fixed quite easily.
+  This could probably be fixed quite easily: `page.dir | split: "/"` should give you
+  a list of the subdirs, which you can then use to create breadcrumbs for each.
+  You'd only want to do this for pages though, not posts.
 
 The Gist
 --------
