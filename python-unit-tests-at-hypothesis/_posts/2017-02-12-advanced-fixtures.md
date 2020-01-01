@@ -1,7 +1,3 @@
----
-tags: [pytest Fixtures]
----
-
 Advanced pytest Fixtures
 ========================
 

@@ -1,7 +1,3 @@
----
-tags: [mocks]
----
-
 When and When Not to Use Mocks
 ==============================
 

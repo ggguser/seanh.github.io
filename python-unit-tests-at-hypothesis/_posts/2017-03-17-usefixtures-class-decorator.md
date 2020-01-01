@@ -1,7 +1,3 @@
----
-tags: [pytest Fixtures]
----
-
 usefixtures as a Class Decorator
 ================================
 
