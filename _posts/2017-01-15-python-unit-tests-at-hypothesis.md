@@ -1,3 +1,7 @@
+---
+tags: [Hypothesis, Python Unit Tests at Hypothesis]
+---
+
 Python Unit Tests at Hypothesis
 ===============================
 
@@ -5,7 +9,8 @@ This is the index page for a series of posts about our approach to Python unit
 tests at [Hypothesis](https://hypothes.is/):
 
 <ol>
-  {% for post in site.categories["python-unit-tests-at-hypothesis"] reversed %}
+  {% for post in site.tags["Python Unit Tests at Hypothesis"] reversed %}
+    {% if post == page %}{% continue %}{% endif %}
     <li><a href="{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ol>

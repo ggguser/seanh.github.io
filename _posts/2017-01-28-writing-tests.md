@@ -1,3 +1,7 @@
+---
+tags: [Python Unit Tests at Hypothesis]
+---
+
 Writing Simple Python Unit Tests
 ================================
 

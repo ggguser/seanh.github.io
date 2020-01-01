@@ -1,3 +1,7 @@
+---
+tags: [Python Unit Tests at Hypothesis]
+---
+
 usefixtures as a Class Decorator
 ================================
 
