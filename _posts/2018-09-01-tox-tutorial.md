@@ -1,7 +1,7 @@
 ---
 title: Managing a Project's Virtualenvs with tox
 subtitle: A comprehensive beginner's introduction to tox.
-tags: tox
+tags: tox Hypothesis
 ---
 
 Tox is a great tool for standardising and automating any development task that
