@@ -4,7 +4,12 @@ subtitle: How to make code reviews a more pleasant and empowering experience for
 tags: Hypothesis
 ---
 
-Update: this was [cross-posted to the Hypothesis blog](https://hypothes.is/blog/code-review-in-remote-teams/).
+<div class="seealso" markdown="1">
+See also:
+
+* This post was [cross-posted to the Hypothesis blog](https://hypothes.is/blog/code-review-in-remote-teams/)
+* Discussion of this post [on MetaFilter](https://www.metafilter.com/163682/Code-reviews-are-for-improving-code-quality-and-morale)
+</div>
 
 This is a write-up of some research that I did for a session with our dev team
 at [Hypothesis](https://hypothes.is/) about how to make our code reviews a more
