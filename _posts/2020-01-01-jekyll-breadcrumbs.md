@@ -138,11 +138,11 @@ permalink: /:collection/:categories/:year/:month/:day/:title/
 will make your permalink URLs match the default breadcrumbs.
 
 Another example: if you use the built-in `permalink: pretty` format then adding
-this breadcrumbs setting to `_config.yml` will change your breadcrumbs to match
+then passing `omit_collection=true`to the include will change your breadcrumbs to match
 your pretty permalinks:
 
-```yaml
-breadcrumbs_omit_collection: true
+```liquid
+{% include breadcrumbs.html omit_collection=true %}
 ```
 
 Limitations
