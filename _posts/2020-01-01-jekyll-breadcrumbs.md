@@ -80,7 +80,7 @@ Breadcrumbs will automatically find and link to their corresponding pages if the
 
   <div class="note" markdown="1">
   When creating category pages it's important to understand that
-  [categories in Jekyll aren't hierarchical](https://seanh.github.io/jekyll-theme-seanh/programming/web%20design/bar/2019/12/24/categories-and-tags/#categories-arent-hierarchical).
+  [categories in Jekyll aren't hierarchical](https://www.seanh.cc/jekyll-theme-seanh/programming/web-design/bar/2019/12/24/categories-and-tags/#categories-arent-hierarchical).
   </div>
 
 * For a post's year, month and day, if there's a page whose URL matches that
