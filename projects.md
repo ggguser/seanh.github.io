@@ -24,7 +24,7 @@ Projects
 
 <article>
   <header>
-    <h3><a href="http://seanh.github.io/storymaps">Story Maps</a> <span class="subtitle">(2005&ndash;2011)</span></h3>
+    <h3><a href="https://www.seanh.cc/storymaps">Story Maps</a> <span class="subtitle">(2005&ndash;2011)</span></h3>
   </header>
 
   <p>A story authoring application for children, developed for
@@ -66,7 +66,7 @@ Projects
 
 <article>
   <header>
-    <h3><a href="http://seanh.github.io/PandaSteer">PandaSteer</a> <span class="subtitle">(2006)</span></h3>
+    <h3><a href="https://www.seanh.cc/PandaSteer">PandaSteer</a> <span class="subtitle">(2006)</span></h3>
   </header>
   <p>Computer game characters that follow, chase, flee, and avoid obstacles
   and collisions.
@@ -120,7 +120,7 @@ Projects
 
 <article>
   <header>
-    <h3><a href="http://seanh.github.io/terminal_velocity">Terminal Velocity</a> <span class="subtitle">(2012)</span></h3>
+    <h3><a href="https://www.seanh.cc/terminal_velocity">Terminal Velocity</a> <span class="subtitle">(2012)</span></h3>
   </header>
   <p>A fast note-taking app for the UNIX terminal.</p>
 </article>
