@@ -142,7 +142,7 @@ then passing `omit_collection=true`to the include will change your breadcrumbs t
 your pretty permalinks:
 
 ```liquid
-{% include breadcrumbs.html omit_collection=true %}
+{% raw %}{% include breadcrumbs.html omit_collection=true %}{% endraw %}
 ```
 
 Limitations
