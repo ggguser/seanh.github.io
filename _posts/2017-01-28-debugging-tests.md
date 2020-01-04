@@ -1,5 +1,5 @@
 ---
-tags: Python Unit Tests at Hypothesis
+tags: [Python Unit Tests at Hypothesis]
 redirect_from:
   - /post/debugging-tests/
 ---
