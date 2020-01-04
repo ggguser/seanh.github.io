@@ -2,6 +2,9 @@
 title: Code Review
 subtitle: How to make code reviews a more pleasant and empowering experience for everyone involved.
 tags: Hypothesis
+redirect_from:
+  - /post/code-review/
+  - /posts/code-review/
 ---
 
 <div class="seealso" markdown="1">

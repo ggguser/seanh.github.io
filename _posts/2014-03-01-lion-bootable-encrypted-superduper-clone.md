@@ -1,5 +1,7 @@
 ---
 title: SuperDuper &amp; FileVault on OS X Lion
+redirect_from:
+  - /post/lion-bootable-encrypted-superduper-clone/
 ---
 
 Lion is the latest version of OS X that my old MacBook will run, I don't know

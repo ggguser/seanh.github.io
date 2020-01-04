@@ -1,5 +1,7 @@
 ---
 tags: [Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/writing-tests/
 ---
 
 Writing Simple Python Unit Tests

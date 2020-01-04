@@ -1,6 +1,8 @@
 ---
 title: Functional Core, Imperative Shell
 subtitle: How to write very testable code using the functional core, imperative shell technique.
+redirect_from:
+  - /post/functional-core-imperative-shell/
 ---
 
 _Testability_ is the idea that code should be designed so that it's easy to

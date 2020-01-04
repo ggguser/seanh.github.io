@@ -2,6 +2,8 @@
 title: A Broken Link Checker Plugin for CKAN
 subtitle: Check your CKAN site for broken links and produce a report.
 tags: CKAN
+redirect_from:
+  - /post/ckanext-deadoralive/
 ---
 
 [ckanext-deadoralive](https://github.com/ckan/ckanext-deadoralive) is a new

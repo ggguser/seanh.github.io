@@ -1,5 +1,7 @@
 ---
 title: Mozilla Thunderbird Keyboard Shortcuts
+redirect_from:
+  - /post/thunderbird-keyboard-shortcuts/
 ---
 
 Thunderbird actually has fairly complete keyboard shortcuts. The schema is all

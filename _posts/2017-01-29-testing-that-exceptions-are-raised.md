@@ -1,5 +1,7 @@
 ---
 tags: [Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/testing-that-exceptions-are-raised/
 ---
 
 Testing that an Exception is Raised with pytest.raises

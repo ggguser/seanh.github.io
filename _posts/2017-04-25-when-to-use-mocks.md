@@ -1,5 +1,7 @@
 ---
 tags: [Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/when-to-use-mocks/
 ---
 
 When and When Not to Use Mocks

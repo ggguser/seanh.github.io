@@ -1,5 +1,7 @@
 ---
 tags: [Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/running-the-h-tests/
 ---
 
 Running the Hypothesis Python Tests

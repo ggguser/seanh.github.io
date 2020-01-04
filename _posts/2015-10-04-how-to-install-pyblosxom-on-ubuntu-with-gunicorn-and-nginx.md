@@ -2,6 +2,8 @@
 title: Pyblosxom on Ubuntu with Gunicorn &amp; Nginx
 subtitle: How to set up a Pyblosxom blog on Ubuntu using the Gunicorn WSGI server and Nginx web server.
 tags: pyblosxom
+redirect_from:
+  - /post/how-to-install-pyblosxom-on-ubuntu-with-gunicorn-and-nginx/
 ---
 
 This is a guide to installing the blog engine

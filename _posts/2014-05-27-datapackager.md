@@ -2,6 +2,8 @@
 title: The Open Knowledge Data Packager
 subtitle: An open source web app for creating and publishing tabular data packages.
 tags: CKAN
+redirect_from:
+  - /post/datapackager/
 ---
 
 

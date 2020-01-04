@@ -1,5 +1,7 @@
 ---
 tags: Python Unit Tests at Hypothesis
+redirect_from:
+  - /post/debugging-tests/
 ---
 
 Debugging Failing Tests with pytest

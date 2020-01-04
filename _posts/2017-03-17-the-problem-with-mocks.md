@@ -1,5 +1,7 @@
 ---
 tags: [Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/the-problem-with-mocks/
 ---
 
 The Problem with Mocks

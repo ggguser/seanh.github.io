@@ -1,5 +1,7 @@
 ---
 tags: [Hypothesis, Python Unit Tests at Hypothesis]
+redirect_from:
+  - /post/python-unit-testing/
 ---
 
 Python Unit Tests at Hypothesis
