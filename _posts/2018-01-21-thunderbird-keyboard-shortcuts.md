@@ -34,7 +34,7 @@ but be warned that undo **doesn't work for all actions**.
 
 ## The menu bar
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/fc184a1e722590fdb5615ce4795ca20a5ae55d41/menubar.png" alt="Thunderbird's menu bar" title="Thunderbird's menu bar" figcaption="Thunderbird's menu bar" %}
+{% include wideimg.html src="/assets/images/thunderbird/menubar.png" alt="Thunderbird's menu bar" title="Thunderbird's menu bar" figcaption="Thunderbird's menu bar" %}
 
 Menu bars are out of fashion these days. The menu bar is hidden by default in both Firefox
 and Thunderbird now. You can still open the menu bar in Firefox or Thunderbird
@@ -73,7 +73,7 @@ using a menu bar from the keyboard (and the standard way that apps use their
 menu bars to document their keyboard shortcuts) across Linux, Windows and
 macOS. For example, here's Leafpad:
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/708f88c5ef748a12772c8aaf9462288a34cb8c46/leafpad.png" alt="Leafpad's menu bar" title="Leafpad's menu bar" figcaption="Leafpad's menu bar" %}
+{% include wideimg.html src="/assets/images/thunderbird/leafpad.png" alt="Leafpad's menu bar" title="Leafpad's menu bar" figcaption="Leafpad's menu bar" %}
 
 Getting back to Thunderbird though,
 <kbd><kbd>Alt</kbd>+<kbd>f</kbd>, <kbd>e</kbd>, <kbd>v</kbd>, <kbd>g</kbd>, <kbd>m</kbd>, <kbd>t</kbd> or <kbd>h</kbd></kbd>
@@ -91,7 +91,7 @@ then the <samp>Copy To</samp> submenu (<kbd>c</kbd>), then the <samp>Recent</sam
 submenu (<kbd>r</kbd>), and then finally selecting the <samp>Receipts</samp>
 folder (<kbd>r</kbd> again):
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/28ef9a8a90024aaddfe8a3e97fde105cfdedb902/receipts.gif" alt="Copying a message using menu bar keyboard controls" title="Copying a message using menu bar keyboard controls" figcaption="Copying a message using menu bar keyboard controls" %}
+{% include wideimg.html src="/assets/images/thunderbird/receipts.gif" alt="Copying a message using menu bar keyboard controls" title="Copying a message using menu bar keyboard controls" figcaption="Copying a message using menu bar keyboard controls" %}
 
 #### Cycling
 
@@ -104,7 +104,7 @@ situation, but it can still happen when selecting a folder from your email. For
 example here hitting <kbd>b</kbd> repeatedly cycles through all the folders
 beginning with <samp>b</samp>:
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/634e4f1bf8fd1a5df285bd804d88173cc697faf6/b.gif" alt="Menu bar cycling" title="Menu bar cycling" figcaption="Menu bar cycling" %}
+{% include wideimg.html src="/assets/images/thunderbird/b.gif" alt="Menu bar cycling" title="Menu bar cycling" figcaption="Menu bar cycling" %}
 
 #### Keyboard shortcuts documented in the menu bar
 
@@ -116,7 +116,7 @@ of going to <kbd><kbd><samp>Message</samp></kbd> → <kbd><samp>New Message</sam
 Similarly, <kbd>a</kbd> will archive the currently selected message, and
 <kbd>r</kbd> will mark the thread as read, without having to open any menus:
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/2f602de60db52aadd04469525af8c00e49371a4f/labels.png" alt="Keyboard shortcuts documented in the menu bar" title="Keyboard shortcuts documented in the menu bar" figcaption="Keyboard shortcuts documented in the menu bar" %}
+{% include wideimg.html src="/assets/images/thunderbird/labels.png" alt="Keyboard shortcuts documented in the menu bar" title="Keyboard shortcuts documented in the menu bar" figcaption="Keyboard shortcuts documented in the menu bar" %}
 
 So the way to learn most keyboard shortcuts in Thunderbird is this:
 
@@ -156,7 +156,7 @@ for more on each of these):
 <kbd><kbd>Shift</kbd>+<kbd>F10</kbd></kbd> opens the context menu (right mouse click menu) for the
 currrently selected folder, message, or thread:
 
-{% include wideimg.html src="https://gist.githubusercontent.com/seanh/58756be0fcaa91083719e440eb80380d/raw/292a9a76e721bbc0b3812ab299b1ba99f55b3209/contextmenu.png" alt="One of the context menus" title="One of the context menus" figcaption="One of the context menus" %}
+{% include wideimg.html src="/assets/images/thunderbird/contextmenu.png" alt="One of the context menus" title="One of the context menus" figcaption="One of the context menus" %}
 
 Which context menu you get depends on which mail pane (see [The three mail
 panes](#the-3-mail-panes)) has the keyboard focus and on whether a thread or a
