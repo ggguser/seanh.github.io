@@ -61,7 +61,7 @@ Projects
   <a href="http://media.inf.ed.ac.uk/teaching/courses/ijp/chapter_eight/chapter_eight.htm">8. Improving structure with inheritance</a>,
   <a href="http://media.inf.ed.ac.uk/teaching/courses/ijp/chapter_nine/chapter_nine.htm">9. More about inheritance</a>,
   <a href="http://media.inf.ed.ac.uk/teaching/courses/ijp/chapter_ten/chapter_ten.htm">10. Further abstraction techniques</a>,
-  <a href="http://media.inf.ed.ac.uk/teaching/courses/ijp/chapter_eleven/chapter_eleven.htm">11. Building graphical user interfaces.</a>
+  <a href="http://media.inf.ed.ac.uk/teaching/courses/ijp/chapter_eleven/chapter_eleven.htm">11. Building graphical user interfaces.</a></p>
 </article>
 
 <article>
