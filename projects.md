@@ -3,10 +3,10 @@ Projects
 
 <article>
   <header>
-    <h3><a href="https://seanh.cc/jekyll-theme-seanh">jekyll-theme-seanh</a> <span class="subtitle">(2019)</span></h3>
+    <h3><a href="https://seanh.cc/jekyll-theme-oatcake">Oatcake</a> <span class="subtitle">(2019)</span></h3>
   </header>
 
-  <p>The GitHub Pages theme this site uses.</p>
+  <p>The GitHub Pages theme that I use on this site.</p>
 </article>
 
 <article>
