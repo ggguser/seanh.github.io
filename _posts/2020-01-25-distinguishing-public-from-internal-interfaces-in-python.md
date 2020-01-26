@@ -1,4 +1,7 @@
 ---
+draft: true
+sitemap: false
+robots: noindex, nofollow
 tag: Python
 ---
 
