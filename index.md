@@ -1,3 +1,9 @@
+---
+redirect_from:
+  - /projects/
+  - /about/
+---
+
 seanh
 =====
 
