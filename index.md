@@ -6,6 +6,9 @@ I work for <a href="https://hypothes.is/">Hypothesis</a> and live in
 <a href="https://en.wikipedia.org/wiki/Edinburgh">Edinburgh</a>.
 This is my site where you can find my [blog posts](#posts) and a list of
 some of my [projects](#projects).
+You can also find me on [GitHub Gist](https://gist.github.com/seanh/public),
+[Stack Overflow](https://stackoverflow.com/users/1175266)
+and [Pinboard](https://pinboard.in/u:seanh).
 
 If you want to get in touch you can
 [send me an email](&#109;ai&#x6C;&#x74;&#x6F;:&#x68;&#x65;&#108;&#108;o&#64;&#115;&#x65;a&#110;h&#46;&#99;&#x63;).
