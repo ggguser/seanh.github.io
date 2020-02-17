@@ -1,11 +1,10 @@
 ---
 tags: [Jekyll]
+subtitle: GitHub Pages-compatible breadcrumbs for Jekyll.
 ---
 
 Breadcrumbs in Jekyll
 =====================
-
-<p class="lead">GitHub Pages-compatible breadcrumbs for Jekyll.</p>
 
 Breadcrumbs help users locate themselves within the hierarchy of your site.
 While your site's header might have some links that act as the site's primary
