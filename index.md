@@ -4,11 +4,14 @@ redirect_from:
   - /about/
 ---
 
-seanh
-=====
+<img src="assets/images/zenek.png" style="box-shadow:none;">
 
-I'm **Sean Hammond**, a software developer and future Portuguese Water Dog owner.
-I work for <a href="https://hypothes.is/">Hypothesis</a> and live in
+Hi 👋, I'm Sean
+===================
+
+I'm a developer and future Portuguese Water Dog owner
+currently working for
+<a href="https://hypothes.is/">Hypothesis</a> and living in
 <a href="https://en.wikipedia.org/wiki/Edinburgh">Edinburgh</a>.
 This is my site where you can find my [blog posts](#posts) and a list of
 some of my [projects](#projects).
