@@ -89,11 +89,14 @@ course:
 Computer game characters that follow, chase, flee, and avoid obstacles and collisions.
 Also <a href="http://github.com/seanh/PandaZUI">PandaZUI</a>, a zoomable user-interface framework.
 
-### UNIX Command Line Tools
+### UNIX Command Line Tools and Dotfiles
 
 * <a href="https://github.com/ckan/losser">Losser</a> (2014), a little JSON to CSV converter
 * <a href="https://www.seanh.cc/terminal_velocity">Terminal Velocity</a> (2012), a fast note-taking app for the UNIX terminal
 * <a href="https://github.com/seanh/snapshotter">Snapshotter</a> (2011), very easy incremental snapshot backups
+* <a href="https://github.com/seanh/dwm">My DWM config</a> <span class="subtitle">(2015)</span>
+* [My Openbox config](https://github.com/seanh/openbox)
+* [My ripgrep config](https://github.com/seanh/ripgrep)
 
 ### Websites
 
@@ -115,10 +118,6 @@ My PyBlosxom plugins and themes:
 <a href="http://github.com/seanh/PyBlosxom-Python-Markdown-2-Plugin">markdown</a>,
 <a href="http://github.com/seanh/PyBlosxom-vessel">Vessel</a>
 and <a href="/scribbish/">Scribbish</a>.
-
-### Dotfiles Etc
-
-* <a href="https://github.com/seanh/dwm">My DWM config</a> <span class="subtitle">(2015)</span>
 
 ### <a href="/dissertation.pdf">Navigating 3D Environments</a> <span class="subtitle">(2004, PDF)</span>
 
