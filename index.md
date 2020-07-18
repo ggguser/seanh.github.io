@@ -91,12 +91,12 @@ Also <a href="http://github.com/seanh/PandaZUI">PandaZUI</a>, a zoomable user-in
 
 ### UNIX Command Line Tools and Dotfiles
 
+* [My ripgrep config](https://github.com/seanh/ripgrep) (2019)
+* [My Openbox config](https://github.com/seanh/openbox) (2018)
+* <a href="https://github.com/seanh/dwm">My DWM config</a> <span class="subtitle">(2015)</span>
 * <a href="https://github.com/ckan/losser">Losser</a> (2014), a little JSON to CSV converter
 * <a href="https://www.seanh.cc/terminal_velocity">Terminal Velocity</a> (2012), a fast note-taking app for the UNIX terminal
 * <a href="https://github.com/seanh/snapshotter">Snapshotter</a> (2011), very easy incremental snapshot backups
-* <a href="https://github.com/seanh/dwm">My DWM config</a> <span class="subtitle">(2015)</span>
-* [My Openbox config](https://github.com/seanh/openbox)
-* [My ripgrep config](https://github.com/seanh/ripgrep)
 
 ### Websites
 
