@@ -98,6 +98,10 @@ Also <a href="http://github.com/seanh/PandaZUI">PandaZUI</a>, a zoomable user-in
 * <a href="https://www.seanh.cc/terminal_velocity">Terminal Velocity</a> (2012), a fast note-taking app for the UNIX terminal
 * <a href="https://github.com/seanh/snapshotter">Snapshotter</a> (2011), very easy incremental snapshot backups
 
+### Gedit Plugins
+
+[gedit-autoname](https://github.com/seanh/gedit-autoname) and [gedit-smart-autosave](https://github.com/seanh/gedit-smart-autosave).
+
 ### Websites
 
 I sometimes make websites for people:
