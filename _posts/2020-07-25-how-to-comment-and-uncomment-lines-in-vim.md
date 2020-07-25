@@ -1,0 +1,63 @@
+---
+tag: vim
+---
+
+How to Comment and Uncomment Lines in Vim
+=========================================
+
+You need the [commentary.vim](https://github.com/tpope/vim-commentary) plugin.
+Then:
+
+<kbd>gcap</kbd>
+: toggle commenting of the paragraph under the cursor ("comment a paragraph")
+
+<kbd>gcc</kbd>
+: toggle commenting of the current line
+
+<kbd>gcG</kbd>
+: toggle commenting of the current line and every line below it, to the bottom
+  of the file
+
+The <kbd>gc</kbd> part of these commands is commentary.vim's comment
+"operator". The part after <kbd>gc</kbd> in each command is the motion. The
+same motions also work with standard Vim operators like <kbd>d</kbd> (delete),
+<kbd>c</kbd> (change), <kbd>y</kbd> (yank, i.e. copy text into a register or
+into the clipboard), <kbd><</kbd> (dedent), <kbd>></kbd> (indent),
+<kbd>=</kbd> (autoindent), etc.
+
+When you type an operator Vim goes into "operator pending mode": it displays
+the operator you entered (<samp>d</samp>, <samp>c</samp>, <samp>y</samp>, etc)
+in the bottom-right and waits for you to enter the motion.
+
+Some standard operator commands (see <kbd>:h operator</kbd> for the full list
+of operators):
+
+<kbd>dl</kbd>, <kbd>cl</kbd>, <kbd>yl</kbd>
+: delete, change or yank the **character** under the cursor ("delete a letter")
+  (you can also use <kbd>x</kbd> to delete the letter under the cursor)
+
+<kbd>dd</kbd>, <kbd>cc</kbd>, <kbd>yy</kbd>, <kbd><<</kbd>, <kbd>>></kbd>, <kbd>==</kbd>
+: delete, change, yank, dedent, indent, or format the **line** under the cursor
+
+<kbd>daw</kbd>, <kbd>caw</kbd>, <kbd>yaw</kbd>
+: delete, change or yank the **word** under the cursor ("delete a word")
+
+<kbd>dap</kbd>, <kbd>cap</kbd>, <kbd>yap</kbd> <kbd><ap</kbd>, <kbd>>ap</kbd>, <kbd>=ap</kbd>
+: delete, change, yank, dedent, indent or format the **paragraph** under the
+  cursor ("delete a paragraph")
+
+The comment/uncomment operator <kbd>gc</kbd> is two keystrokes. Some of the
+builtin operators are also two keystrokes, for example: <kbd>g~</kbd> (toggle
+case), <kbd>gu</kbd> (lowercase) and <kbd>gU</kbd> (uppercase). To invoke an
+operator like <kbd>gc</kbd> on the current line you don't have to type
+<kbd>gcgc</kbd>, you can just type <kbd>gcc</kbd>:
+
+<kbd>gcc</kbd>, <kbd>g~~</kbd>, <kbd>guu</kbd>, <kbd>gUU</kbd>
+: toggle commenting, toggle case, lowercase, or uppercase the current line
+
+Plugins can also add new motions as well as new operators
+For example [vim-textobj-entire](https://github.com/kana/vim-textobj-entire)
+adds the <kbd>ae</kbd> motion for the entire file:
+
+<kbd>gcae</kbd>, <kbd>yae</kbd>, <kbd>dae</kbd>, etc
+: toggle commenting off, yank, or delete the entire file
