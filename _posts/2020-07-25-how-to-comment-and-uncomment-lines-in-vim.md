@@ -9,14 +9,25 @@ You need the [commentary.vim](https://github.com/tpope/vim-commentary) plugin.
 Then:
 
 <kbd>gcap</kbd>
-: toggle commenting of the paragraph under the cursor ("comment a paragraph")
-
+: Toggle commenting of the paragraph under the cursor ("comment a paragraph").
+  Takes a count, e.g. <kbd>3gcap</kbd> toggles commenting of three paragraphs.
+  
 <kbd>gcc</kbd>
-: toggle commenting of the current line
+: Toggle commenting of the current line.
+  This also takes a count, e.g. <kbd>3gcc</kbd> toggles commenting of three lines.
 
 <kbd>gcG</kbd>
 : toggle commenting of the current line and every line below it, to the bottom
   of the file
+
+Like with other operators you can also highlight some lines in visual mode and
+do <kbd>gc</kbd> to toggle commenting of the highlighted lines.
+
+Finally, you can use <kbd>gc</kbd> as a motion for another operator rather than
+as an operator itself:
+
+<kbd>dgc</kbd>, <kbd>cgc</kbd>, <kbd>ygc</kbd>, <kbd><gc</kbd>, <kbd>>gc</kbd>,  
+: delete, change, yank, dedent, or indent the current comment
 
 The <kbd>gc</kbd> part of these commands is commentary.vim's comment
 "operator". The part after <kbd>gc</kbd> in each command is the motion. The
@@ -45,6 +56,9 @@ of operators):
 <kbd>dap</kbd>, <kbd>cap</kbd>, <kbd>yap</kbd> <kbd><ap</kbd>, <kbd>>ap</kbd>, <kbd>=ap</kbd>
 : delete, change, yank, dedent, indent or format the **paragraph** under the
   cursor ("delete a paragraph")
+
+These can all take counts the same as <kbd>gc</kbd> can, e.g. <kbd>2x</kbd> to
+delete two letters, <kbd>3>ap</kbd> to indent three paragraphs.
 
 The comment/uncomment operator <kbd>gc</kbd> is two keystrokes. Some of the
 builtin operators are also two keystrokes, for example: <kbd>g~</kbd> (toggle
