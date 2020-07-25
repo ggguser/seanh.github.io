@@ -29,6 +29,9 @@ as an operator itself:
 <kbd>dgc</kbd>, <kbd>cgc</kbd>, <kbd>ygc</kbd>, <kbd><gc</kbd>, <kbd>>gc</kbd>,  
 : delete, change, yank, dedent, or indent the current comment
 
+This means you can use <kbd>gc</kbd> as the motion for the <kbd>gc</kbd> operator:
+<kbd>gcgc</kbd> uncomments the entire comment that's currently under the cursor.
+
 The <kbd>gc</kbd> part of these commands is commentary.vim's comment
 "operator". The part after <kbd>gc</kbd> in each command is the motion. The
 same motions also work with standard Vim operators like <kbd>d</kbd> (delete),
