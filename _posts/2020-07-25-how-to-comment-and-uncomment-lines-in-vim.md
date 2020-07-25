@@ -77,4 +77,4 @@ For example [vim-textobj-entire](https://github.com/kana/vim-textobj-entire)
 adds the <kbd>ae</kbd> motion for the entire file:
 
 <kbd>gcae</kbd>, <kbd>yae</kbd>, <kbd>dae</kbd>, etc
-: toggle commenting off, yank, or delete the entire file
+: toggle commenting of, yank, or delete the entire file
