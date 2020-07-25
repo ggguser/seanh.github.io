@@ -33,7 +33,7 @@ Some standard operator commands (see <kbd>:h operator</kbd> for the full list
 of operators):
 
 <kbd>dl</kbd>, <kbd>cl</kbd>, <kbd>yl</kbd>
-: delete, change or yank the **character** under the cursor ("delete a letter")
+: delete, change or yank the **letter** under the cursor ("delete a letter")
   (you can also use <kbd>x</kbd> to delete the letter under the cursor)
 
 <kbd>dd</kbd>, <kbd>cc</kbd>, <kbd>yy</kbd>, <kbd><<</kbd>, <kbd>>></kbd>, <kbd>==</kbd>
