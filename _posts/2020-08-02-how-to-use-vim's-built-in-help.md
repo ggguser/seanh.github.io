@@ -12,6 +12,8 @@ Unfortunately you need some help to know how to use the help.
 This post is a quick reference and tutorial for that.
 
 <div class="seealso" markdown="1">
+### See Also
+
 * <kbd>:help</kbd> opens Vim's "main help file" ([`help.txt`](https://vimhelp.org/)).
   There's a short tutorial on how to use the help files at the top.
   
