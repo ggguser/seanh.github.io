@@ -40,7 +40,7 @@ If there's already a help window open <kbd>:help</kbd> will use that window inst
 `{subject}` can be lots of different types of thing:
 
 * Topics, e.g.
-  <kbd>[:help deleting]((https://vimhelp.org/change.txt.html#deleting))</kbd>
+  <kbd>[:help deleting](https://vimhelp.org/change.txt.html#deleting)</kbd>
   or <kbd>[:help options](https://vimhelp.org/options.txt.html)</kbd>
 
 * Normal-mode commands:
