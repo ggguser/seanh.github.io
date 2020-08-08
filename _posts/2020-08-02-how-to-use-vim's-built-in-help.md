@@ -12,13 +12,15 @@ Unfortunately you need some help to know how to use the help.
 This post is a quick reference and tutorial for that.
 
 <div class="seealso" markdown="1">
-### See Also
+#### See also
 
 * <kbd>:help</kbd> opens Vim's "main help file" ([`help.txt`](https://vimhelp.org/)).
   There's a short tutorial on how to use the help files at the top.
   
 * <kbd>:help helphelp</kbd> opens [`helphelp.txt`](https://vimhelp.org/helphelp.txt.html),
   which is the full documentation for the `:help` commands and how to use the help files.
+  
+* You can browse and search all of the help pages online at <https://vimhelp.org/>
 </div>
 
 Here's a quick tutorial and reference:
