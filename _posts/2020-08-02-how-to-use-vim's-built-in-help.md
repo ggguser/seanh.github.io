@@ -17,6 +17,7 @@ This post is a quick reference and tutorial for that.
   
 * <kbd>:help helphelp</kbd> opens [`helphelp.txt`](https://vimhelp.org/helphelp.txt.html),
   which is the full documentation for the `:help` commands and how to use the help files.
+</div>
 
 Here's a quick tutorial and reference:
 
