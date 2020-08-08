@@ -33,7 +33,7 @@ in a new window.
 <kbd>F1</kbd> also does the same thing. The <kbd>Help</kbd> key on your keyboard might also work if it has one.
 Use <kbd>:vert help</kbd> to open it in a vertical split instead of a horizontal one,
 or <kbd>:tab help</kbd> to open it in a new tab.
-I don't think it's possible to open a help file in the current window.
+I don't think it's possible to open a help file in or in-place-of the current non-help window.
 If there's already a help window open <kbd>:help</kbd> will use that window instead of opening a new window
 (even if the cursor is currently in a different window).
 
