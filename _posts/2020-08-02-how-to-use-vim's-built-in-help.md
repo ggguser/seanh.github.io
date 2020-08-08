@@ -28,7 +28,8 @@ This post is a quick reference and tutorial for Vim's <kbd>:help</kbd> files.
 
 ## Opening help
 
-<kbd>:help</kbd> (or just <kbd>:h</kbd>) opens the "main help file" (the front page of the help manual, `help.txt`).
+<kbd>:help</kbd> (or just <kbd>:h</kbd>) opens the "main help file" (the front page of the help manual, `help.txt`)
+in a new window.
 <kbd>F1</kbd> also does the same thing. The <kbd>Help</kbd> key on your keyboard might also work if it has one.
 Use <kbd>:vert help</kbd> to open it in a vertical split instead of a horizontal one,
 or <kbd>:tab help</kbd> to open it in a new tab.
