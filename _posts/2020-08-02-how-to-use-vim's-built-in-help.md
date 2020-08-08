@@ -80,7 +80,8 @@ If there's already a help window open <kbd>:help</kbd> will use that window inst
 
 * The names of settings have to be wrapped in single quotes, e.g.
   <kbd>[:help 'number'](https://vimhelp.org/options.txt.html#'number')</kbd>
-Error messages: `:help E37`
+
+* Error messages have their own help tags, e.g. [<kbd>:help E37</kbd>](https://vimhelp.org/message.txt.html#E37)
 
 * And more! See <kbd>[:help help-summary](https://vimhelp.org/usr_02.txt.html#help-summary)</kbd> for the complete list of help tag types.
 
