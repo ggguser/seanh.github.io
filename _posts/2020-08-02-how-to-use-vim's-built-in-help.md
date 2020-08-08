@@ -26,7 +26,7 @@ This post is a quick reference and tutorial for Vim's <kbd>:help</kbd> files.
   (you _don't_ want to use the copy at <http://vimdoc.sourceforge.net/>, it's hopelessly out of date)
 </div>
 
-## Opening help
+## Opening the help window
 
 <kbd>:help</kbd> (or just <kbd>:h</kbd>) opens the "main help file" (the front page of the help manual, `help.txt`)
 in a new window.
@@ -86,7 +86,20 @@ If there's already a help window open <kbd>:help</kbd> will use that window inst
 
 * And more! See <kbd>[:help help-summary](https://vimhelp.org/usr_02.txt.html#help-summary)</kbd> for the complete list of help tag types.
 
-## Searching
+## Closing the help window
+
+<kbd>:q</kbd> or <kbd>ZZ</kbd> will close a help window like any other window if the cursor is in the help window.
+
+<kbd>:helpclose</kbd> or <kbd>:helpc</kbd> will close the help window even if the cursor isn't in it.
+
+## Navigating in the help window
+
+<kbd><kbd>Ctrl</kbd>-<kbd>]</kbd></kbd> opens the help tag under the cursor.
+
+<kbd><kbd>Ctrl</kbd>-<kbd>t</kbd></kbd> or <kbd><kbd>Ctrl</kbd>-<kbd>o</kbd></kbd> goes back to the previous location.
+
+
+## Searching for help topics
 
 <kbd>:help {subject}</kbd> (or just <kbd>:h {subject}</kbd>) opens the help tag `{subject}`.
 `{subject}` can include wildcards like `*`, `?` or `[a-z]`.
@@ -99,7 +112,7 @@ For example type <kbd>:help buffer</kbd> and then instead of <kbd>Enter</kbd> pr
 <kbd><kbd>Ctrl</kbd> + <kbd>d</kbd></kbd> or <kbd>Tab</kbd> to see a list of all help tags
 matching "buffer".
 
-### Full-text search with <kbd>:helpgrep</kbd>
+## Searching the full text of help files with `:helpgrep`
 
 <kbd>:helpgrep {pattern}</kbd> or <kbd>:helpg {pattern}</kbd> does a full-text search of all help files
 for `pattern` and opens the first match.
@@ -110,23 +123,3 @@ It populates the quickfix list with all the matches so you can use quickfix comm
 Patterns are case-sensitive, regardless of the `ignorecase` setting, unless you append `\c` to the end of the pattern.
 
 <kbd>:lhelpgrep</kbd> (or just <kbd>:lh</kbd>) does the same but uses the per-window location list (of the help window) instead of the quickfix list.
-
-## Navigating between pages within help
-
-<kbd><kbd>Ctrl</kbd>-<kbd>]</kbd></kbd> opens the help tag under the cursor.
-<kbd><kbd>Ctrl</kbd>-<kbd>t</kbd></kbd> or <kbd><kbd>Ctrl</kbd>-<kbd>o</kbd></kbd> goes back to the previous location.
-
-## Closing the help window
-
-<kbd>:q</kbd> or <kbd>ZZ</kbd> will close a help window like any other window if the cursor is in the help window.
-<kbd>:helpclose</kbd> or <kbd>:helpc</kbd> will close the help window even if the cursor isn't in it.
-
-## Searching for help
-
-<kbd>:help options</kbd> searches for subject "options" and opens the best-matching help page
-:help subject<Ctrl-d> to see matches
-
-:tag pattern and :tnext when in the help window, or :tselect
-
-:helpgrep searches the contents of help files, puts list of matching files into quickfix list
-Always case-sensitive regardless of ignorecase setting, add \c to ignore case
