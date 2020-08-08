@@ -22,6 +22,13 @@ This post is a quick reference and tutorial for Vim's <kbd>:help</kbd> files.
   
 * You can browse and search all of the help pages online at <https://vimhelp.org/>
   (you _don't_ want to use the copy at <http://vimdoc.sourceforge.net/>, it's hopelessly out of date)
+
+* The [quickref](https://vimhelp.org/quickref.txt.html) (<kbd>:help quickref</kbd>)
+  and [index](https://vimhelp.org/index.txt.html) (<kbd>:help index</kbd>) are two
+  handy help pages.
+
+  vimhelp.org also has the [VIM FAQ](https://vimhelp.org/vim_faq.txt.html)
+  (which I don't think is available from inside Vim).
 </div>
 
 ## Opening the help window
