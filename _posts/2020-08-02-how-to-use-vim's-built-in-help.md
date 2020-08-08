@@ -42,7 +42,7 @@ If there's already a help window open <kbd>:help</kbd> will use that window inst
 
 * Topics, e.g.
   [<kbd>:help deleting</kbd>](https://vimhelp.org/change.txt.html#deleting)
-  or <kbd>[:help options](https://vimhelp.org/options.txt.html)</kbd>
+  or <kbd markdown="1">[:help options](https://vimhelp.org/options.txt.html)</kbd>
 
 * Normal-mode commands:
   <kbd>[:help x](https://vimhelp.org/change.txt.html#x)</kbd>
