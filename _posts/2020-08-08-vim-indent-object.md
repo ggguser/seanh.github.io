@@ -38,7 +38,7 @@ For example:
   After this, further <kbd>ii</kbd>'s start selecting lines and blocks above the class.
 
 You can combine the `ai`, `ii` and `aI` text objects with other operators besides `v` for visual mode,
-e.g. <kbd>cii</kbd>, <kbd>dii</kbd>, <kbd>yii</kbd> etc.
+e.g. <abbr title="Change an indented block (deletes the block and puts you in insert mode with the cursor where the block started)"><kbd>cii</kbd></abbr>, <abbr title="Delete (cut) an indented block"><kbd>dii</kbd></abbr>, <abbr title="Yaml (copy)"><kbd>yii</kbd></abbr> etc.
 For example <kbd>>ii</kbd> or <kbd><ii</kbd> will indent or dedent an indented block.
 If you have [vim-commentary](https://github.com/tpope/vim-commentary) installed then
 <kbd>gcii</kbd> will comment out an indented block.
