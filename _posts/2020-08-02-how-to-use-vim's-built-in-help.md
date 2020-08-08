@@ -7,8 +7,18 @@ robots: noindex, nofollow
 How to Use Vim's Built-in Help
 ==============================
 
-See <kbd>:help help</kbd> for Vim's manual about using its built-in help files.
-Here's a quick cheat sheet:
+Vim has a comprehensive built-in manual.
+Unfortunately you need some help to know how to use the help.
+This post is a quick reference and tutorial for that.
+
+<div class="seealso" markdown="1">
+* <kbd>:help</kbd> opens Vim's "main help file" ([`help.txt`](https://vimhelp.org/)).
+  There's a short tutorial on how to use the help files at the top.
+  
+* <kbd>:help helphelp</kbd> opens [`helphelp.txt`](https://vimhelp.org/helphelp.txt.html),
+  which is the full documentation for the `:help` commands and how to use the help files.
+
+Here's a quick tutorial and reference:
 
 ## Opening help
 
