@@ -28,7 +28,7 @@ very useful in Python!
   
   For a `try` clause it'll select both the `try` above and the first `except` below (but not the body of the `except` clause).
 
-* In visual mode you can keep repeating one of the above mappings to keep selecting more and more text at higher and higher indentation levels.
+* In visual mode you can keep repeating one of the above mappings to keep extending the selection to more and more text at higher and higher indentation levels.
 For example:
 
   <kbd>vii</kbd> (goes into visual mode and selects the body of a try clause),
